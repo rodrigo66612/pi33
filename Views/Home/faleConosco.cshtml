@@ -1,0 +1,42 @@
+@model formaContato
+
+ <h2 class="titulo-branco">Fale Conosco</h2>
+  <form id="formulario" class="formulario">
+    <label class="branco" for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br>
+
+    <label class="branco" for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label class="branco" for="comentario">Comentário:</label><br>
+    <textarea id="comentario" name="comentario" required></textarea><br>
+
+    <input class="botao-branco" type="submit" value="Enviar">
+  </form>
+
+<script>
+document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var comentario = document.getElementById('comentario').value;
+
+    if (nome.length < 3) {
+        alert('O nome precisa ter no minimo 3 caracteres.');
+        return;
+    }
+
+    if (email.trim() === '') {
+        alert('O email deve ser preenchido.');
+        return;
+    }
+
+    if (comentario.trim() === '') {
+        alert('O comentario deve ser preenchido.');
+        return;
+    }
+
+    alert('Formulario enviado com sucesso!');
+});
+</script>

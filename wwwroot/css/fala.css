@@ -1,0 +1,34 @@
+
+.titulo-branco {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+  }
+  
+ 
+  .formulario {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+ 
+  .branco {
+    color: white;
+  }
+  
+  .botao-branco {
+    width: 100%;
+    padding: 10px;
+    background-color:#017301;;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .botao-branco:hover {
+    background-color: #00f22c;
+  }
